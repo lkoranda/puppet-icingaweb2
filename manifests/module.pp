@@ -55,7 +55,7 @@
 define icingaweb2::module(
   Enum['absent', 'present']         $ensure         = 'present',
   String                            $module         = $title,
-  Stdlib::Absolutepath              $module_dir     = "${::icingaweb2::params::module_path}/${title}",
+  String                            $module_dir     = "${::icingaweb2::params::module_path}/${title}",
   Enum['git', 'none', 'package']    $install_method = 'git',
   Optional[String]                  $git_repository = undef,
   String                            $git_revision   = 'master',

@@ -18,8 +18,8 @@
 #
 define icingaweb2::module::fileshipper::directory(
   String               $identifier = $title,
-  Stdlib::Absolutepath $source     = undef,
-  Stdlib::Absolutepath $target     = undef,
+  String               $source     = undef,
+  String               $target     = undef,
   String               $extensions = '.conf',
 ){
   assert_private("You're not supposed to use this defined type manually.")

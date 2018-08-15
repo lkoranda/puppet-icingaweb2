@@ -32,7 +32,7 @@
 # }
 #
 define icingaweb2::inisection(
-  Stdlib::Absolutepath $target,
+  String               $target,
   String               $section_name  = $title,
   Hash                 $settings      = {},
   Pattern[/^\d+$/]     $order         = '01',

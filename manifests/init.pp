@@ -79,10 +79,10 @@
 #
 class icingaweb2 (
   Enum['file', 'syslog', 'none']            $logging             = 'file',
-  Stdlib::Absolutepath                      $logging_file        = '/var/log/icingaweb2/icingaweb2.log',
+  String                                    $logging_file        = '/var/log/icingaweb2/icingaweb2.log',
   Enum['ERROR', 'WARNING', 'INFO', 'DEBUG'] $logging_level       = 'INFO',
   Boolean                                   $show_stacktraces    = false,
-  Stdlib::Absolutepath                      $module_path         = $::icingaweb2::params::module_path,
+  String                                    $module_path         = $::icingaweb2::params::module_path,
   String                                    $theme               = 'Icinga',
   Boolean                                   $theme_disabled      = false,
   Boolean                                   $manage_repo         = false,

@@ -31,9 +31,9 @@ define icingaweb2::module::elasticsearch::instance(
   String                         $uri                = undef,
   Optional[String]               $user               = undef,
   Optional[String]               $password           = undef,
-  Optional[Stdlib::Absolutepath] $ca                 = undef,
-  Optional[Stdlib::Absolutepath] $client_certificate = undef,
-  Optional[Stdlib::Absolutepath] $client_private_key = undef,
+  Optional[String]               $ca                 = undef,
+  Optional[String]               $client_certificate = undef,
+  Optional[String]               $client_private_key = undef,
 ){
   assert_private("You're not supposed to use this defined type manually.")
 
